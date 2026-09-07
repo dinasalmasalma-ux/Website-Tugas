@@ -1,0 +1,147 @@
+<!DOCTYPE html><html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Mojokerto city</title>
+ 
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+ </head>
+ <body>
+    <header>
+        <div class="jumbotron">
+            <h1>MOJOKERTO</h1>
+            <p>Mojokerto city is one of the regions included in the metropolitan area of Surabaya</p>
+        </div>
+    <nav>
+        <ul>
+            <li><a href="#History">History</a></li>
+            <li><a href="#Geographical">Geographical</a></li>
+            <li><a href="#Tourist Destinations">Tourist Destinations</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <div id="content">
+            <article id="History" class="card">
+                <h2>History</h2>
+                <img 
+                src="assets/History.jpg" 
+                alt="Monument in Mojokerto" 
+                class="featured-image"
+                />
+                <p>It is said that the name Mojokerto comes from two words, namely "Mojo", which is the name of a Maja tree that grows a lot in one of the villages there, and "Kerto", which comes from the word kerta raharja, which means calm. So that Mojokerto can be interpreted as a place where the Maja tree grows in peace. The change of the name of Japan Regency to Mojokerto was confirmed through the decision of the Governor General of the Dutch East Indies on September 12, No. 1838.  </p>  
+                <p>According to historical records, the name Mojokerto is also related to the Majapahit Kingdom, which left many ancient objects in this region. Mojokerto was the former capital of the Majapahit Kingdom, a large kingdom in the archipelago that stood between the 13th and 15th centuries.</p>
+            </article>
+            
+            <article id="Geographical" class="card">
+                <h2>Geographical</h2>
+                <img 
+                src="assets/Geographical.png" 
+                alt="The beauty of Mojokerto"
+                class="featured-image"
+                />
+                <p>
+                    <strong>The Mojokerto City Region is between 7°33' LS and 122°28' BT with the following territorial boundaries :</strong><br>
+                    North Side: Brantas River<br>
+                    East Side: Puri District, Mojokerto District<br>
+                    South Side: Sooko and Puri Districts, Mojokerto District<br>
+                    West Side: Sooko District, Mojokerto District<br>
+                </p>
+            </article>
+            
+            <article id="Tourist Destinations" class="card">
+                <h2>Tourist Destinations</h2>
+                <p>For nature lovers, Mojokerto tourism offers many amazing places to visit. From waterfalls, mountains, to forests, you can find them all in Mojokerto. The attraction of Mojokerto tourism also lies in its cultural richness, from temples to historical sites. With its natural beauty and abundant cultural richness, Mojokerto tourism offers an unforgettable holiday experience.</p>
+                
+                <section>
+                    <h3>Dlundung Waterfall</h3>
+                    <img 
+                    src="assets/Dlundung Waterfall.jpeg" 
+                    alt="Dlundung Waterfall"
+                    class="featured-image"
+                    />
+                <p>Dlundung Waterfall is one of the most beautiful waterfalls in East Java. This Mojokerto tourist destination has a height of about 60 meters surrounded by dense forest. In addition to offering stunning waterfall views, the Dlundung Waterfall tourist area also provides an area that can be used for camping by paying around IDR 10,000.</p>
+                </section>
+                
+                <section>
+                    <h3>Mount Penanggungan</h3>
+                    <img 
+                    src="assets/Mount Penanggungan.webp" 
+                    alt="Mount Penanggungan" 
+                    class="featured-image"
+                    />
+                    <p>Mount Penanggungan is a mountain located between Pasuruan Regency and Mojokerto Regency. One of Mojokerto's tourism icons has a height of 1,653 meters above sea level. There are four Mount Penanggungan hiking trails that can be taken by tourists, three of which must go through Mojokerto. The most popular hiking trail is the Tamiajeng trail in Trawas District, Mojokerto Regency which can be reached in about 4-5 hours.</p>
+                </section>
+            </article>
+        </div>
+        
+        <aside>
+            <article class="profile card">
+                <header>
+                    <h2>Mojokerto City</h2>
+                    <p>Spirit of Majapahit</p>
+                    <figure>
+                        <img src="assets/logo.png">
+                        <figcaption>Symbol</figcaption>
+                    </figure>
+                </header>
+                
+                <section>
+                    <h3>More Information</h3>
+                    <table>
+                        <tr>
+                            <th>Country :</th>
+                            <td>Indonesia</td>
+                        </tr>
+                        <tr>
+                            <th>Anniversary :</th>
+                            <td>20 June 1918</td>
+                        </tr>
+                        <tr>
+                            <th>City Area :</th>
+                            <td>16,46 km<sup>2</sup></td>
+                        </tr>
+                        <tr>
+                            <th>Local Language :</th>
+                            <td>Javanese</td>
+                        </tr>
+                        <tr>
+                            <th>Telephone Code :</th>
+                            <td>+62 321</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+
+            <button onclick="toggleDarkMode()">🌙 Mode Gelap</button>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>Latihan Pemrograman Web &#169; 2024, Alhayu</p>
+    </footer>
+
+    <script>
+        const body = document.body;
+        const darkModeButton = document.querySelector("button");
+
+        if (localStorage.getItem("darkMode") === "enabled") {
+            body.classList.add("darkMode");
+        }
+
+        function toggleDarkMode() {
+            body.classList.toggle("dark-mode");
+
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("darkMode", "enabled");
+        } else {
+            localStorage.setItem("darkMode", "disabled");
+        }
+    }
+    </script>
+</body>
+</html>

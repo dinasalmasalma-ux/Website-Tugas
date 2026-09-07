@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    color: #720000;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #720000;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.profile img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 4rem;
+    background-color: #720000;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav {
+    background-color: #b10000;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    transition: font-weight 0.2s ease;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #720000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+aside button:hover {
+    background-color: #b10000;
+}
+
+header {
+    display: inline;
+}
+
+.dark-mode h2, .dark-mode h3 {
+    color: #ff9999;
+}
+
+.dark-mode {
+    background: #121212;
+    color: #f5f5f5;
+}
+
+.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+.dark-mode .jumbotron {
+    background-color: #930000;
+    color: white;
+}
+
+.dark-mode nav {
+    background-color: #930000;
+}
+
+.dark-mode footer {
+    background-color: #930000;
+    color: white;
+}
+
+.dark-mode nav a {
+    color: #f5f5f5;
+}
+
+.dark-mode nav a:hover {
+    color: #ffb3b3;
+}
+
+.dark-mode table {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+.dark-mode th {
+    background-color: #333;
+    color: #ffcccc;
+}
+.dark-mode main, .dark-mode aside {
+    background: #333;
+    color: white;
+}
+.dark-mode button {
+    background: #555;
+    color: white;
+}
+.dark-mode button:hover {
+    background: #777;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+    main aside {
+        align-self: stretch;
+    }
+}
